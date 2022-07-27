@@ -1,3 +1,32 @@
+/* Start Define Variables
+#######################*/
+
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #1787e0;
+  --navbar-height: 70px;
+  --transition-duration: 0.3s;
+}
+
+/* End Define Variables
+#######################*/
+
+
+/* Start Global Styles
+#######################*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   padding: 0;
@@ -11,10 +40,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -26,6 +51,9 @@ a {
   }
 }
 
+/* End Global Styles
+####################*/
+
 /* Start Container
 ###################*/
 
@@ -36,27 +64,23 @@ a {
   margin-right: auto;
 }
 
-@media (min-width: 768px){
-  .container
-  {
+@media (min-width: 768px) {
+  .container {
     width: 750px;
   }
 }
 
 @media (min-width: 992px) {
-  .container
-  {
+  .container {
     width: 970px;
   }
 }
 
 @media (min-width: 1200px) {
-  .container
-  {
+  .container {
     width: 1170px;
   }
 }
 
 /* End Container
 ###############*/
-
