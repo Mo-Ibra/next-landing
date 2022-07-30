@@ -1,13 +1,12 @@
 import { Header, Navbar, Title } from "../components/";
+import { Articles } from '../sections/';
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Header />
-      <Title>
-        Hello from Title
-      </Title>
+      <Articles />
     </>
   )
 }
