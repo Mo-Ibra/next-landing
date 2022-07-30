@@ -1,5 +1,4 @@
-.navbar
-{
+.navbar {
     background-color: white;
     position: relative;
     -webkit-box-shadow: 0 0 10px #ddd;
@@ -7,8 +6,7 @@
     box-shadow: 0 0 10px #ddd;
 }
 
-.navbar .navbar__container
-{
+.navbar .navbar__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,8 +14,7 @@
     position: relative;
 }
 
-.navbar .navbar__container .navbar__logo > a
-{
+.navbar .navbar__container .navbar__logo>a {
     color: var(--primary-color);
     font-size: 26px;
     font-weight: bold;
@@ -28,30 +25,32 @@
 }
 
 @media(max-width: 767px) {
-    .navbar .navbar__container .navbar__logo
-    {
+    .navbar .navbar__container .navbar__logo {
         width: 100%;
     }
 
-    .navbar .navbar__container .navbar__logo > a
-    {
+    .navbar .navbar__container .navbar__logo>a {
         height: 50px;
     }
 }
 
-.navbar .navbar__container > ul
-{
+.navbar .navbar__container>ul {
     display: flex;
 }
 
 @media(max-width: 767px) {
-    .navbar .navbar__container > ul
-    {
+    .navbar .navbar__container>ul {
         margin: auto;
     }
 }
 
-.navbar .navbar__container > ul > li > a {
+.navbar ul > li:hover .mega {
+    opacity: 1;
+    z-index: 100;
+    top: calc(100% + 1px);
+}
+
+.navbar .navbar__container>ul>li>a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,15 +62,14 @@
 }
 
 @media(max-width: 767px) {
-    .navbar .navbar__container > ul > li > a
-    {
+    .navbar .navbar__container>ul>li>a {
         padding: 10px;
         font-size: 14px;
         height: 40px;
     }
 }
 
-.navbar .navbar__container > ul > li > a::before {
+.navbar .navbar__container>ul>li>a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -82,13 +80,91 @@
     transition: var(--transition-duration);
 }
 
-.navbar .navbar__container > ul > li > a:hover
-{
+.navbar .navbar__container>ul>li>a:hover {
     color: var(--primary-color);
     background-color: #fafafa;
 }
 
-.navbar .navbar__container > ul > li > a:hover::before
-{
+.navbar .navbar__container>ul>li>a:hover::before {
     left: 0;
+}
+
+.navbar .mega {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+    background-color: white;
+    border-bottom: 3px solid var(--main-color);
+    z-index: -1;
+    display: flex;
+    gap: 40px;
+    top: calc(100% + 50px);
+    opacity: 0;
+    transition: top var(--main-transition), opacity var(--main-transition);
+}
+
+@media (max-width: 767px) {
+    .navbar .mega {
+        flex-direction: column;
+        gap: 0;
+        padding: 5px;
+    }
+}
+
+.navbar .mega .image img {
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    .navbar .mega .image {
+        display: none;
+    }
+}
+
+.navbar .mega .links {
+    min-width: 250px;
+    flex: 1;
+}
+
+.navbar .mega .links li {
+    position: relative;
+}
+
+.navbar .mega .links li:not(:last-child) {
+    border-bottom: 1px solid #e9e6e6;
+}
+
+@media (max-width: 767px) {
+    .navbar .mega .links:first-of-type li:last-child {
+        border-bottom: 1px solid #e9e6e6;
+    }
+}
+
+.navbar .mega .links li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fafafa;
+    z-index: -1;
+    transition: var(--main-transition);
+}
+
+.navbar .mega .links li:hover::before {
+    width: 100%;
+}
+
+.navbar .mega .links li a {
+    color: var(--main-color);
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar .mega .links li a i {
+    margin-right: 10px;
 }
