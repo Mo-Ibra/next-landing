@@ -1,10 +1,8 @@
 import styles from '../../styles/title.module.css';
 
-const Title = () => {
+const Title = ({ children }) => {
     return (
-        <div>
-            Title
-        </div>
+        <h2 className={styles.title}>{children}</h2>
     )
 }
 

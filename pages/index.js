@@ -1,10 +1,13 @@
-import { Header, Navbar } from "../components/";
+import { Header, Navbar, Title } from "../components/";
 
 const Home = () => {
   return (
     <>
       <Navbar />
       <Header />
+      <Title>
+        Hello from Title
+      </Title>
     </>
   )
 }
