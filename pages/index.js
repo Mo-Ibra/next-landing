@@ -1,5 +1,5 @@
 import { Header, Navbar, Title } from "../components/";
-import { Articles } from '../sections/';
+import { Articles, Gallery } from '../sections/';
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <Articles />
+      <Gallery />
     </>
   )
 }
