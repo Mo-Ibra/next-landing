@@ -1,0 +1,52 @@
+/* Start Skills */
+.skills__section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.skills__section .container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .skills__section img {
+        display: none !important;
+    }
+}
+
+.skills__section .skills {
+    flex: 1;
+}
+
+.skills__section .skill h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__section .skill h3 span {
+    font-size: 12px;
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 4px;
+    color: var(--primary-color);
+}
+
+.skills__section .skill .progress {
+    height: 30px;
+    background-color: #eee;
+    position: relative;
+}
+
+.skills__section .skill .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.5s linear;
+}
+
+/* End Skills */

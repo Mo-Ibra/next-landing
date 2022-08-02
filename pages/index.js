@@ -1,5 +1,5 @@
 import { Header, Navbar } from "../components/";
-import { Articles, Features, Gallery, Services, Team, Testimonials } from '../sections/';
+import { Articles, Features, Gallery, Services, Skills, Team, Testimonials } from '../sections/';
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
       <Testimonials />
       <Team />
       <Services />
+      <Skills />
     </>
   )
 }
