@@ -1,5 +1,5 @@
 import { Header, Navbar } from "../components/";
-import { Articles, Features, Gallery } from '../sections/';
+import { Articles, Features, Gallery, Testimonials } from '../sections/';
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <Articles />
       <Gallery />
       <Features />
+      <Testimonials />
     </>
   )
 }
