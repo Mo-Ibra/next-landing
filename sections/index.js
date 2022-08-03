@@ -6,3 +6,4 @@ export { default as Team } from './team/team';
 export { default as Services } from './services/services';
 export { default as Skills } from './skills/skills';
 export { default as WorkStep } from './workstep/workstep';
+export { default as Pricing } from './pricing/pricing';

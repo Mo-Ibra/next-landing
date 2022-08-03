@@ -1,5 +1,5 @@
 import { Header, Navbar } from "../components/";
-import { Articles, Features, Gallery, Services, Skills, Team, Testimonials, WorkStep } from '../sections/';
+import { Articles, Features, Gallery, Pricing, Services, Skills, Team, Testimonials, WorkStep } from '../sections/';
 
 const Home = () => {
   return (
@@ -14,6 +14,7 @@ const Home = () => {
       <Services />
       <Skills />
       <WorkStep />
+      <Pricing />
     </>
   )
 }
