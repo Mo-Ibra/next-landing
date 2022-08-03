@@ -8,14 +8,14 @@ import VideoImg from '../../assets/images/video-preview.jpg';
 
 const Videos = () => {
     return (
-        <section class={styles.videos} id="videos">
+        <section className={styles.videos} id="videos">
             <Title>Top Videos</Title>
-            <div class={styles.container + " container"}>
-                <div class={styles.holder}>
-                    <div class={styles.list}>
-                        <div class={styles.name}>
+            <div className={styles.container + " container"}>
+                <div className={styles.holder}>
+                    <div className={styles.list}>
+                        <div className={styles.name}>
                             Top Videos
-                            <i class="fas fa-random"></i>
+                            <i className="fas fa-random"></i>
                         </div>
                         <ul>
                             <li>How To Create Sub Domain<span>05:18</span></li>
@@ -27,9 +27,9 @@ const Videos = () => {
                             <li>Ys Series All Games Ending <span>08:10</span></li>
                         </ul>
                     </div>
-                    <div class={styles.preview}>
+                    <div className={styles.preview}>
                         <Image src={VideoImg} />
-                        <div class={styles.info}>Everything About The Virtual Hosts</div>
+                        <div className={styles.info}>Everything About The Virtual Hosts</div>
                     </div>
                 </div>
             </div>

@@ -9,3 +9,4 @@ export { default as WorkStep } from './workstep/workstep';
 export { default as Pricing } from './pricing/pricing';
 export { default as Vidoes } from './videos/videos';
 export { default as Stats } from './stats/stats';
+export { default as Discount } from './discount/discount';
