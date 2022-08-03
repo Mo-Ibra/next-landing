@@ -6,13 +6,13 @@ import Image from "next/image";
 
 const Box = ({ imgUrl, name, role }) => {
     return (
-        <div class={styles.box}>
+        <div className={styles.box}>
             <div className={styles.img__container}>
                 <Image src={imgUrl} />
             </div>
             <h3>{name}</h3>
-            <span class={styles.title}>{role}</span>
-            <div class={styles.rate}>
+            <span className={styles.title}>{role}</span>
+            <div className={styles.rate}>
                 <AiFillStar className={styles.filled} />
                 <AiFillStar className={styles.filled} />
                 <AiFillStar className={styles.filled} />

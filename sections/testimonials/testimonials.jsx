@@ -14,9 +14,9 @@ import AvatarImg6 from '../../assets/images/avatars/6.png';
 
 const Testimonials = () => {
     return (
-        <section class={styles.testimonials} id="testimonials">
+        <section className={styles.testimonials} id="testimonials">
             <Title>Testimonials</Title>
-            <div class={styles.container + " container"}>
+            <div className={styles.container + " container"}>
                 <Box imgUrl={AvatarImg1} name="Mohamed Ibrahim" role="Full Stack Web Developer" />
                 <Box imgUrl={AvatarImg2} name="Ahmed Hassan" role="Front End Web Developer" />
                 <Box imgUrl={AvatarImg3} name="Sayed Mohamed" role="UI/UX Designer" />

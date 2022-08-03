@@ -17,9 +17,9 @@ import Box from './box/box';
 const Team = () => {
     return (
         <>
-            <section class={styles.team} id="team">
+            <section className={styles.team} id="team">
                 <Title>Team</Title>
-                <div class={styles.container + " container"}>
+                <div className={styles.container + " container"}>
                     <Box imageUrl={TeamImg1} />
                     <Box imageUrl={TeamImg2} />
                     <Box imageUrl={TeamImg3} />
@@ -28,7 +28,7 @@ const Team = () => {
                     <Box imageUrl={TeamImg6} />
                 </div>
             </section>
-            <div class={styles.spikes}></div>
+            <div className={styles.spikes}></div>
         </>
     )
 }

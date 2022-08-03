@@ -6,10 +6,10 @@ import { AiFillFacebook, AiFillLinkedin, AiFillTwitterCircle, AiFillYoutube } fr
 
 const Box = ({ imageUrl }) => {
     return (
-        <div class={styles.box}>
-            <div class={styles.data}>
+        <div className={styles.box}>
+            <div className={styles.data}>
                 <Image src={imageUrl} />
-                <div class={styles.social}>
+                <div className={styles.social}>
                     <a href="#">
                         <AiFillFacebook className={styles.icon} />
                     </a>
@@ -24,7 +24,7 @@ const Box = ({ imageUrl }) => {
                     </a>
                 </div>
             </div>
-            <div class={styles.info}>
+            <div className={styles.info}>
                 <h3>Name</h3>
                 <p>Simple Short Description</p>
             </div>
