@@ -1,4 +1,4 @@
-import { Header, Navbar } from "../components/";
+import { Footer, Header, Navbar } from "../components/";
 import { Articles, Features, Gallery, Pricing, Services, Skills, Team, Testimonials, WorkStep, Vidoes, Stats, Discount } from '../sections/';
 
 const Home = () => {
@@ -18,6 +18,7 @@ const Home = () => {
       <Vidoes />
       <Stats />
       <Discount />
+      <Footer />
     </>
   )
 }

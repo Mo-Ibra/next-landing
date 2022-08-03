@@ -7,7 +7,7 @@ const Header = () => {
         <header className={styles.header}>
             <div className={styles.container + ' container'}>
                 <div className={styles.text}>
-                    <h1>Welcome, To Elzero World</h1>
+                    <h1>Welcome, To Desigx!</h1>
                     <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
                 </div>
                 <div className={styles.image}>
